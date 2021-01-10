@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Images\chart4.PNG" />
+    <Content Include="Images\chart1.PNG" />
+    <Content Include="Images\chart3.PNG" />
+    <Content Include="Images\chart2.PNG" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

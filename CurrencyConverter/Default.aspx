@@ -15,19 +15,20 @@
             <asp:TextBox ID="txbxAmount" runat="server"></asp:TextBox>
 &nbsp;US dollars into
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Width="120px">
-                <asp:ListItem>Euros</asp:ListItem>
-                <asp:ListItem>Japanese Yen</asp:ListItem>
-                <asp:ListItem>British Pound</asp:ListItem>
-                <asp:ListItem>Canadian Dollar</asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem Value="EUR">Euros</asp:ListItem>
+                <asp:ListItem Value="JPY">Japanese Yen</asp:ListItem>
+                <asp:ListItem Value="GBP">British Pound</asp:ListItem>
+                <asp:ListItem Value="CAD">Canadian Dollar</asp:ListItem>
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Button ID="btnConvert" runat="server" Text="OK" />
+            <asp:Button ID="btnConvert" runat="server" Text="OK" OnClick="btnConvert_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnShowGraph" runat="server" Text="Show Graph" />
+            <asp:Button ID="btnShowGraph" runat="server" Text="Show Graph" OnClick="btnShowGraph_Click" />
             <br />
             <br />
-            <asp:Image ID="Image1" runat="server" Height="175px" Width="317px" />
+            <asp:Image ID="imgGraph" runat="server" Height="175px" Width="317px" />
             <br />
             <br />
             <asp:Label ID="lblResult" runat="server"></asp:Label>
